@@ -1,7 +1,12 @@
+import { Routes, Route } from "react-router-dom"
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Header";
-import BiodataSection from "./components/Biodata";
-import ContactSection from "./components/Contact";
+
+import Home from "./routing/home";
+import TentangSaya from "./routing/tentangsaya";
+import Biodata from "./routing/biodata";
+import Kontak from "./routing/kontak";
+
 import Footer from "./components/Footer";
 
 import "./Biodata.css";
@@ -11,15 +16,15 @@ const App = () => {
     <div className="page">
       <Navbar />
 
-      <div className="shell">
-        <Hero />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tentangsaya" element={<TentangSaya />} />
+        <Route path="/biodata" element={<Biodata />} />
+        <Route path="/kontak" element={<Kontak />} />
+        
+      </Routes>
 
-      <div className="shell">
-        <BiodataSection />
-        <ContactSection />
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };

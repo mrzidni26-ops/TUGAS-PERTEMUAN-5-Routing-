@@ -9,6 +9,8 @@ function Biodata() {
         <div className="nav">
           <span className="nav-mark">Tugas Promnet</span>
           <div className="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#detail">Data diri</a>
             <a href="#kontak">Kontak</a>
           </div>

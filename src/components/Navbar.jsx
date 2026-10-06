@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="shell">
@@ -5,8 +7,10 @@ const Navbar = () => {
         <span className="nav-mark">Tugas Promnet</span>
 
         <div className="nav-links">
-          <a href="#detail">Data diri</a>
-          <a href="#kontak">Kontak</a>
+          <Link to="/">Home</Link>
+          <Link to="/tentangsaya">Tentang Saya</Link>
+          <Link to="/biodata">Biodata</Link>
+          <Link to="/kontak">Kontak</Link>
         </div>
       </div>
     </div>
